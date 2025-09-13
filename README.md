@@ -21,7 +21,7 @@ The Agent class acts as the central orchestrator, integrating all components and
 The execution section configures the hyperparameters, creates the Gymnasium environment, and wraps it for video recording if specified. The SAC agent is instantiated with these parameters. The main training loop runs for a predetermined number of episodes. In each episode, the agent resets the environment and interacts with it step-by-step, storing experiences and triggering learning updates. The episode's total reward (score) is recorded, and a running average is maintained. The best-performing model, based on this average score, is saved to disk throughout the training process. After training concludes, the learning curve is plotted to visualize the agent's performance improvement, providing a clear summary of the training efficacy and the agent's learning progression. This entire pipeline demonstrates a modern, production-ready deep reinforcement learning system built with PyTorch.
 
 ---
-Zeynab Ashouri : https://drive.google.com/file/d/1uR1FcegCPztdDw0drdMlsCYiNLbTZYqO/view?usp=drive_link
+Zeynab Ashouri : https://drive.google.com/drive/folders/1zrrnnqH4FaFzaRtJ9WLJA2WvNfsGJAtm?usp=drive_link
 
 Sogol Zamanian : (z)
 
