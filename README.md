@@ -19,3 +19,15 @@ The neural network architecture is defined through three distinct PyTorch classe
 The Agent class acts as the central orchestrator, integrating all components and managing the learning process. During initialization, it creates instances of the replay buffer, the actor, the two critics, the value network, and a target value network. The target network is initially a clone of the value network and is updated slowly to enhance learning stability. The agent interacts with the environment using its choose_action method, which can operate in either a deterministic or stochastic mode. Experiences collected from these interactions are stored in the replay buffer. The learn method is the algorithmic core: it periodically samples a batch of experiences, converts them to PyTorch tensors, and performs a series of calculations to update all networks. The value network is updated to minimize the mean-squared error against a target derived from the minimum Q-value from the two critics minus an entropy term. The actor is updated to maximize the expected Q-value (again from the minimum of the two critics) plus the entropy bonus. Finally, the two critics are updated to minimize the error between their current Q-value estimates and a target computed using the reward and the target value network's estimate of the next state's value. The target value network's parameters are then softly updated towards the main value network's parameters.
 
 The execution section configures the hyperparameters, creates the Gymnasium environment, and wraps it for video recording if specified. The SAC agent is instantiated with these parameters. The main training loop runs for a predetermined number of episodes. In each episode, the agent resets the environment and interacts with it step-by-step, storing experiences and triggering learning updates. The episode's total reward (score) is recorded, and a running average is maintained. The best-performing model, based on this average score, is saved to disk throughout the training process. After training concludes, the learning curve is plotted to visualize the agent's performance improvement, providing a clear summary of the training efficacy and the agent's learning progression. This entire pipeline demonstrates a modern, production-ready deep reinforcement learning system built with PyTorch.
+
+---
+Zeynab Ashouri : https://drive.google.com/file/d/1uR1FcegCPztdDw0drdMlsCYiNLbTZYqO/view?usp=drive_link
+Sogol Zamanian : (z)
+
+Phase 1:  
+Zeynab Ashouri: Answering Question 1 at the beginning of the video (ai-1)  +  line-by-line explanation of the code up to the end of the "Complete UNet Structure" section in the rest of the video.  
+Sogol Zamanian: Line-by-line explanation of the rest of the code  +  answering Questions 2, 3, and 4 at the end of the video (x).  
+
+Phase 2:  
+Zeynab Ashouri: Answering Question 1 at the beginning of the video (ai-2)  +  line-by-line explanation of the code up to the end of the "Neural Networks" section in the rest of the video.  
+Sogol Zamanian: Line-by-line explanation of the rest of the code  +  answering Questions 2, 3, and 4 at the end of the video (y).
