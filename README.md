@@ -23,12 +23,12 @@ The execution section configures the hyperparameters, creates the Gymnasium envi
 ---
 Zeynab Ashouri : https://drive.google.com/drive/folders/1zrrnnqH4FaFzaRtJ9WLJA2WvNfsGJAtm?usp=drive_link
 
-Sogol Zamanian : (z)
+Sogol Zamanian : https://drive.google.com/drive/folders/1gUJpnMVXtMzPfrIGbKMPhOG8jypXI8sO?usp=sharing
 
 Phase 1:  
 Zeynab Ashouri: Answering Question 1 at the beginning of the video (ai-1)  +  line-by-line explanation of the code up to the end of the "Complete UNet Structure" section in the rest of the video.  
-Sogol Zamanian: Line-by-line explanation of the rest of the code  +  answering Questions 2, 3, and 4 at the end of the video (x).  
+Sogol Zamanian: Line-by-line explanation of the rest of the code starting from "Attention UNet" +  answering Questions 2, 3, and 4 at the end of the video (phase 1 questions).  
 
 Phase 2:  
 Zeynab Ashouri: Answering Question 1 at the beginning of the video (ai-2)  +  line-by-line explanation of the code up to the end of the "Neural Networks" section in the rest of the video.  
-Sogol Zamanian: Line-by-line explanation of the rest of the code  +  answering Questions 2, 3, and 4 at the end of the video (y).
+Sogol Zamanian: Line-by-line explanation of the rest of the code starting from "Agent Implementation" +  answering Questions 2, 3, and 4 at the end of the video (phase 2 questions).
